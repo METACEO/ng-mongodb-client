@@ -122,5 +122,10 @@
       }
     }
   },
-  "defaultProject": "ng-mongodb-client"
+  "defaultProject": "ng-mongodb-client",
+  "schematics": {
+    "@ngrx/schematics:component": {
+      "styleext": "scss"
+    }
+  }
 }
