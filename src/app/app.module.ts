@@ -11,7 +11,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
-import { AppEffects } from './app.effects';
+import { effects } from './effects';
 import { reducers, metaReducers } from './reducers';
 
 @NgModule({
@@ -27,7 +27,7 @@ import { reducers, metaReducers } from './reducers';
     MatToolbarModule,
     StoreModule.forRoot(reducers, { metaReducers }),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
-    EffectsModule.forRoot([AppEffects]),
+    EffectsModule.forRoot(effects),
   ],
   providers: [],
   bootstrap: [AppComponent]
