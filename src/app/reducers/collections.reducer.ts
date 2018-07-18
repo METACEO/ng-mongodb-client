@@ -1,6 +1,6 @@
 import {Action} from '@ngrx/store';
 
-import {TablesActionTypes, TablesActionsUnion} from '../actions/tables.actions';
+import {CollectionsActionTypes, CollectionsActionsUnion} from '../actions/collections.actions';
 
 export interface State {
   loaded: boolean;
@@ -10,10 +10,10 @@ const initialState: State = {
   loaded: null,
 };
 
-export function reducer(state: State = initialState, action: TablesActionsUnion) {
+export function reducer(state: State = initialState, action: CollectionsActionsUnion) {
   switch (action.type) {
 
-    case TablesActionTypes.Loaded: {
+    case CollectionsActionTypes.Loaded: {
       return {
         ...state,
         loaded: true,

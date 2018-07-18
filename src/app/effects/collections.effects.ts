@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Actions, Effect } from '@ngrx/effects';
 
 @Injectable()
-export class TablesEffects {
+export class CollectionsEffects {
 
   constructor(private actions$: Actions) {}
 }

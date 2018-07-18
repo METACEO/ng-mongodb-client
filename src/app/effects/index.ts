@@ -1,9 +1,9 @@
+import {CollectionsEffects} from './collections.effects';
 import {DatabaseEffects} from './database.effects';
-import {TablesEffects} from './tables.effects';
 import {RecordsEffects} from './records.effects';
 
 export const effects = [
+  CollectionsEffects,
   DatabaseEffects,
-  TablesEffects,
   RecordsEffects,
 ];
